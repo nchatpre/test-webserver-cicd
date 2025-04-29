@@ -1,0 +1,9 @@
+services:
+    nginx:
+      image: nginx:latest
+      container_name: nginx-container
+      ports:
+       - 3080:80
+      volumes:
+       - ./web-files:/usr/share/nginx/html:ro
+       
